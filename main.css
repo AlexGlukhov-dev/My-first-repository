@@ -1,0 +1,7 @@
+.border {
+    text-align: center;
+    border: 3px groove #4DC508;
+    border-radius: 10px;
+    background-color: #D0FF00;
+    color: #0A16FF;
+}
