@@ -1,7 +1,39 @@
-.border {
+body {
+    display: grid;
+    grid-template-rows: 25%, 70%, 5%;
+    grid-template-areas: 
+        "h"
+        "b"
+        "f";
+    background:url(./img/background.png) center no-repeat;
+    background-size: cover;
+    height: 470px;
+}
+
+.header {
+    grid-area: h;
+    color: #12f368;
     text-align: center;
-    border: 3px outset #4DC508;
+}
+
+.border {
+    grid-area: b;
+    margin-top: 120px;
+    padding-top: 10px;
+    text-align: center;
+    border: 3px inset #7E7F88;
     border-radius: 10px;
-    background: linear-gradient(30deg, #00FF4C, #F6FF00);
-    color: #0A16FF;
+    background: linear-gradient(30deg, #5F606A, #4a4b2e);
+    color: #12f368;
+    opacity: 0.9;
+}
+
+.footer {
+    grid-area: f;
+    color: #12f368;
+    border-top: 1px outset #38c7f3;
+    text-align: right;
+    padding-right: 35px;
+    padding-top: 10px;
+    margin-top: 200px;
 }
